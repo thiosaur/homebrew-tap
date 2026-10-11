@@ -7,8 +7,10 @@ cask "crackattack" do
   desc "Puzzle game: swap blocks, chain clears, bury your opponent under garbage"
   homepage "https://thiosaur.github.io/crackattack/"
 
+  # Betas are published as normal releases: keep the pre-release suffix of the tag.
   livecheck do
     url :url
+    regex(/^v?(\d+(?:\.\d+)+(?:-[\w.]+)?)$/i)
     strategy :github_latest
   end
 
