@@ -1,8 +1,8 @@
 cask "crackattack" do
-  version "2.0.0-beta.1"
-  sha256 "ce16db3aab1f6123e4d40ce5d862af86f9590484768ede6b53fd463e98eafbcd"
+  version "2.0.0-beta.3"
+  sha256 "ca08c3ef1412eda9973f20f8d8ba1581eae9a3371fdfdc7a118b9ff183423376"
 
-  url "https://github.com/thiosaur/crackattack/releases/download/v#{version}/crackattack-#{version}-macos-arm64.zip"
+  url "https://github.com/thiosaur/crackattack/releases/download/v#{version}/crackattack-#{version}-macos-arm64-installer.dmg"
   name "Crack Attack!"
   desc "Puzzle game: swap blocks, chain clears, bury your opponent under garbage"
   homepage "https://thiosaur.github.io/crackattack/"
@@ -17,7 +17,7 @@ cask "crackattack" do
   depends_on arch: :arm64
   depends_on macos: ">= :big_sur"
 
-  app "crackattack-#{version}-macos-arm64/Crack Attack.app"
+  app "Crack Attack.app"
 
   zap trash: "~/Library/Application Support/crack-attack"
 
