@@ -1,6 +1,6 @@
 cask "crackattack" do
-  version "2.0.0-beta.3"
-  sha256 "ca08c3ef1412eda9973f20f8d8ba1581eae9a3371fdfdc7a118b9ff183423376"
+  version "2.0.0-beta.4"
+  sha256 "06059f3789161b8b3822f740a1fd498af1f79d8c78e6cb26fd6324bc4e187604"
 
   url "https://github.com/thiosaur/crackattack/releases/download/v#{version}/crackattack-#{version}-macos-arm64-installer.dmg"
   name "Crack Attack!"
